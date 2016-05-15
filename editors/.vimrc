@@ -1,41 +1,34 @@
-" Vundle starts
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" vim-plug starts
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Make sure you use single quotes
 
-" Plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'airblade/vim-gitgutter'
-" Plugin 'valloric/youcompleteme'
+" Plugs
+" NERD tree will be loaded on the first invocation of NERDTreeToggle command
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-Plugin 'scrooloose/syntastic'
-Plugin 'elzr/vim-json'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'fatih/vim-go'
-Plugin 'ekalinin/dockerfile.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+" Plug 'valloric/youcompleteme'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
+Plug 'scrooloose/syntastic'
+Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'fatih/vim-go'
+Plug 'ekalinin/dockerfile.vim'
+
+" Add Plugs to &runtimepath
+call plug#end()
+
+
 " Put your non-Plugin stuff after this line
 
 " `minimal-vimrc` starts
@@ -46,12 +39,8 @@ filetype plugin indent on    " required
 
 " You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.
 " We set it explicitely to make our position clear!
-set nocompatible
+set nocompatible              " be iMproved, required
 
-filetype plugin indent on  " Load plugins according to detected filetype.
-syntax on                  " Enable syntax highlighting.
-
-set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
 set softtabstop =4         " Tab key indents by 4 spaces.
 set shiftwidth  =4         " >> indents by 4 spaces.
@@ -94,6 +83,10 @@ endif
 
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
+if empty(glob("$HOME/.vim/files"))
+  silent !mkdir -p $HOME/.vim/files/{backup,swap,undo,info}
+endif
+
 set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
@@ -104,7 +97,3 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 " `minimal-vimrc` ends
-
-" Color cloumn settings for Git commit length
-set cc=51,73,81,121
-highlight ColorColumn ctermbg=17 guibg=navyblue

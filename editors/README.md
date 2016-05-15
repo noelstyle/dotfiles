@@ -46,36 +46,53 @@ apm list --bare --installed | cut -d @ -f1 > atom-packages.txt
 
 ### Plugins
 
-The following plugins and more are installed by default using [Vundle](https://github.com/VundleVim/Vundle.vim):
+The following plugins and more are installed by default using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
 
-Plugin 'scrooloose/syntastic'
-Plugin 'elzr/vim-json'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'fatih/vim-go'
-Plugin 'ekalinin/dockerfile.vim'
+Plug 'scrooloose/syntastic'
+Plug 'elzr/vim-json'
+Plug 'plasticboy/vim-markdown'
+Plug 'fatih/vim-go'
+Plug 'ekalinin/dockerfile.vim'
+
+Plug 'rhysd/committia.vim'
 ```
 
 Just comment it out if you find the plugin you do not want to install.
 
 ### Configurations
 
-I am not a big fan of Vim and tring to keep its configuration as simple as possible.
+I am not a big fan of Vim and tring to keep its configuration as simple as possible. Most of the additional features come from [vim-galore](https://github.com/mhinz/vim-galore/blob/master/content/minimal-vimrc.vim):
 
 ```viml
-" Enable syntax highlighting
-syntax on
+" You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.
+" We set it explicitely to make our position clear!
+set nocompatible
 
-" Color cloumn settings for Git commit length
-set cc=51,73,81,121
-highlight ColorColumn ctermbg=17 guibg=navyblue
+filetype plugin indent on  " Load plugins according to detected filetype.
+syntax on                  " Enable syntax highlighting.
+
+set autoindent             " Indent according to previous line.
+set expandtab              " Use spaces instead of tabs.
+set softtabstop =4         " Tab key indents by 4 spaces.
+set shiftwidth  =4         " >> indents by 4 spaces.
+set shiftround             " >> indents to next multiple of 'shiftwidth'.
 ```
+
+## [NeoVim](https://neovim.io/)
+
+**NeoVim** basically uses the same configurations with Vim. However, `~/.config/nvim/init.vim` is not a symbolic link to `~/.vimrc`. I have decided to leave them separate files because there are some differences between NeoVim and Vim. These differences might not a big deal but they can be in the future.
+
+### References
+
+* [Moving to Neovim from Vim](https://jacky.wtf/weblog/moving-to-neovim/)
+* [How to start using Neovim instead of Vim](http://veelenga.com/editors/how-to-start-using-neovim-instead-of-vim/)
 
 ## [IdeaVim](https://github.com/JetBrains/ideavim)
 

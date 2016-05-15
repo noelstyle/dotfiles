@@ -2,6 +2,9 @@ cask_args appdir: '/Applications'
 
 brew 'vim', args: ['--override-system-vi', '--with-python3', '--with-mzscheme', '--with-lua', '--with-luajit', '--with-tcl']
 
+tap 'neovim/neovim'
+brew 'neovim'
+
 cask 'atom'
 
 cask 'visual-studio-code'
