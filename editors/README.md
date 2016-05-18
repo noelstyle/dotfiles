@@ -44,28 +44,6 @@ apm list --bare --installed | cut -d @ -f1 > atom-packages.txt
 
 ## [Vim](https://vim.org)
 
-### Plugins
-
-The following plugins and more are installed by default using [vim-plug](https://github.com/junegunn/vim-plug):
-
-```viml
-Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
-Plug 'bling/vim-airline'
-Plug 'tpope/vim-surround'
-Plug 'airblade/vim-gitgutter'
-
-Plug 'scrooloose/syntastic'
-Plug 'elzr/vim-json'
-Plug 'plasticboy/vim-markdown'
-Plug 'fatih/vim-go'
-Plug 'ekalinin/dockerfile.vim'
-
-Plug 'rhysd/committia.vim'
-```
-
-Just comment it out if you find the plugin you do not want to install.
-
 ### Configurations
 
 I am not a big fan of Vim and tring to keep its configuration as simple as possible. Most of the additional features come from [vim-galore](https://github.com/mhinz/vim-galore/blob/master/content/minimal-vimrc.vim):
@@ -84,6 +62,40 @@ set softtabstop =4         " Tab key indents by 4 spaces.
 set shiftwidth  =4         " >> indents by 4 spaces.
 set shiftround             " >> indents to next multiple of 'shiftwidth'.
 ```
+
+### Plugins
+
+The following plugins and more are installed by default using [vim-plug](https://github.com/junegunn/vim-plug):
+
+```viml
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'scrooloose/syntastic'
+Plug 'elzr/vim-json'
+Plug 'plasticboy/vim-markdown'
+Plug 'fatih/vim-go'
+Plug 'ekalinin/dockerfile.vim'
+
+Plug 'rhysd/committia.vim'
+```
+
+Just comment it out if you find the plugin you do not want to install.
+
+### Tips
+
+#### Comment out lines
+
+Using 'tpope/vim-commentary':
+
+* `gcc` to comment out a line (takes a count)
+* `gc` in visual mode to comment out the selection
+* `:7,17Commentary`
+* `g/TODO/Commentary`
 
 ## [NeoVim](https://neovim.io/)
 

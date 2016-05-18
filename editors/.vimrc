@@ -16,6 +16,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 " Plug 'valloric/youcompleteme'
 

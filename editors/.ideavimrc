@@ -4,3 +4,6 @@ set surround
 
 map \r :action ReformatCode<CR>
 map \o :action OptimizeImports<CR>
+
+
+set backspace   =indent,eol,start  " Make backspace work as you would expect.
