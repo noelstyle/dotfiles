@@ -26,6 +26,8 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'fatih/vim-go'
 Plug 'ekalinin/dockerfile.vim'
 
+Plug 'rhysd/committia.vim'
+
 " Add Plugs to &runtimepath
 call plug#end()
 
@@ -98,3 +100,7 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 " `minimal-vimrc` ends
+
+if empty(glob("/usr/local/opt/fzf"))
+  set rtp+=/usr/local/opt/fzf
+endif

@@ -84,3 +84,5 @@ export LANG=ko_KR.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -32,3 +32,7 @@ call plug#end()
 
 
 " Put your non-Plugin stuff after this line
+
+if empty(glob("/usr/local/opt/fzf"))
+  set rtp+=/usr/local/opt/fzf
+endif
