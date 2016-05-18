@@ -15,9 +15,9 @@ done < "$THIS_DIR/atom-packages.txt"
 
 # Vim
 ## Install Vim plugins
-vim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev/null
-
+## See https://github.com/VundleVim/Vundle.vim/issues/511
+echo | echo | vim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev/null
 
 # NVim
 ## Install NeoVim plugins
-nvim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev/null
+echo | echo | nvim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev/null
