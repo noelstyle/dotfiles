@@ -3,7 +3,7 @@
 # Remove all images without tags
 function dockerrmi() {
   for IMAGE in $(docker images -a | grep "^<none>" | awk '{print $3}'); do
-      docker rmi ${IMAGE}
+      docker rmi --force ${IMAGE}
   done
   unset ${IMAGE}
 }
@@ -11,7 +11,7 @@ function dockerrmi() {
 # Remove all images
 function dockerrmiall() {
   for IMAGE in $(docker images -a | awk '{print $3}'); do
-      docker rmi ${IMAGE}
+      docker rmi --force ${IMAGE}
   done
   unset ${IMAGE}
 }
