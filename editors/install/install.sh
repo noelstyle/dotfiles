@@ -13,6 +13,9 @@ while IFS='' read -r PLUGIN || [[ -n "$PLUGIN" ]]; do
   fi
 done < "$THIS_DIR/atom-packages.txt"
 
+## Install sqlparse for Atom Beautify
+pip install --upgrade sqlparse
+
 # Vim
 ## Install Vim plugins
 ## See https://github.com/VundleVim/Vundle.vim/issues/511

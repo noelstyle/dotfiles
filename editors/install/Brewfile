@@ -10,3 +10,6 @@ cask 'atom'
 cask 'visual-studio-code'
 
 brew 'shellcheck'
+
+# Install uncrustify for Atom Beautify
+brew 'uncrustify'
