@@ -27,6 +27,8 @@ Plug 'ekalinin/dockerfile.vim'
 
 Plug 'rhysd/committia.vim'
 
+Plug 'bartman/git-wip', {'rtp': 'vim/'}
+
 " Add Plugs to &runtimepath
 call plug#end()
 
