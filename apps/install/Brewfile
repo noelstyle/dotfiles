@@ -2,6 +2,10 @@ cask_args appdir: '/Applications'
 
 brew 'open-completion'
 
+# Download media contents
+## See https://you-get.org/?ref=producthunt
+brew 'you-get', args: ['--with-rtmpdump']
+
 cask 'alfred'
 cask 'cheatsheet'
 cask 'appcleaner'
@@ -19,6 +23,7 @@ cask 'google-chrome'
 
 # Office
 cask 'skype'
+cask 'whatsapp'
 # cask 'pdfpenpro'
 
 # Writing
@@ -37,7 +42,6 @@ cask 'skim'
 cask 'dropbox'
 cask 'flickr-uploadr'
 cask 'google-photos-backup'
-cask 'gmvault'
 cask 'amazon-cloud-drive'
 cask 'chronosync'
 
@@ -51,6 +55,7 @@ cask 'edgeview'
 # cask 'tvmobili'
 
 cask 'anki'
+cask 'gitbook-editor'
 cask 'transmission'
 # cask 'webtorrent'
 cask 'parallels-desktop'

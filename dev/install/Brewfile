@@ -18,11 +18,13 @@ brew 'awk'
 # send files to OSX trash instead of deleting them
 brew 'rmtrash'
 
+brew 'moreutils' # http://zeroturnaround.com/rebellabs/5-command-line-tools-you-should-be-using/
 
 # Development
-cask 'sourcetree'
 cask 'p4merge'
 cask 'beyond-compare'
+
+brew 'icdiff' # http://zeroturnaround.com/rebellabs/5-command-line-tools-you-should-be-using/
 
 # tap 'homebrew/gui'
 # brew 'meld'
@@ -37,6 +39,7 @@ brew 'lnav', args: ['----with-curl']
 brew 'mysql'
 brew 'mytop'
 cask 'mysqlworkbench'
+cask 'sequel-pro'
 
 # Install Cyberduck and its command line interface. See https://duck.sh/
 cask 'cyberduck'
@@ -62,3 +65,12 @@ brew 's3cmd'
 
 # Android
 brew 'android-sdk'
+
+
+# AWS
+brew 'awscli'
+brew 'amazon-ecs-cli'
+
+
+# Shell Development
+cask 'black-screen'

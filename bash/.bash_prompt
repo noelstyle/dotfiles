@@ -1,3 +1,4 @@
+#!/bin/env
 # ref: http://jonghyunkim816.blogspot.de/2013/10/blog-post_17.html
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced

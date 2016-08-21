@@ -6,3 +6,6 @@ brew 'git-lfs'
 brew 'git-flow'
 brew 'git-extras'
 brew 'git-standup'
+
+cask 'sourcetree'
+cask 'gitkraken'
