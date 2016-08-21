@@ -63,10 +63,6 @@ brew 's3cmd'
 
 # cask 'manopen'
 
-# Android
-brew 'android-sdk'
-
-
 # AWS
 brew 'awscli'
 brew 'amazon-ecs-cli'

@@ -6,4 +6,4 @@ export GRADLE_HOME=/usr/local/opt/gradle/libexec
 
 export PATH=$JAVA_HOME/bin:$PATH
 
-# Enable tab completion for `spring-boot`
+export ANDROID_HOME=/usr/local/opt/android-sdk

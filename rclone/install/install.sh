@@ -3,10 +3,14 @@ THIS_DIR=$(cd "$(dirname "$0")"; pwd)
 
 brew bundle --file="$THIS_DIR/Brewfile"
 
-# http://rclone.org/install/
-export GOPATH=$HOME/.rclone
-
-if test ! -f "$GOPATH/bin/rclone"
+if test ! -d "${GOPATH}"
 then
-  mkdir -p "$GOPATH/src" && go get github.com/ncw/rclone
+  echo "GOPATH is not defined!"
+  exit 1
+fi
+
+# http://rclone.org/install/
+if test ! -f "${GOPATH}/bin/rclone"
+then
+  mkdir -p "${GOPATH}/src" && go get github.com/ncw/rclone
 fi

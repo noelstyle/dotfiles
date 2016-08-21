@@ -4,10 +4,11 @@ tap 'homebrew/completions'
 
 # cask 'dockertoolbox'
 
-brew 'docker-completion'
+# brew 'docker-completion' # jet와 충돌난다
 brew 'docker-compose-completion'
 brew 'docker-machine-completion'
 
 cask 'jet'
-brew 'kubectl'
 brew 'fleetctl'
+
+brew 'kubectl'

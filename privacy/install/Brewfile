@@ -3,12 +3,13 @@ cask_args appdir: '/Applications'
 # brew 'dnscrypt-proxy', args: [ '--with-plugins' ]
 
 brew 'tor', args: [ '--with-libnatpmp', '--with-libscrypt', '--with-miniupnpc' ]
+brew 'torsocks'
 brew 'arm'
 cask 'torbrowser'
 cask 'onionshare'
 cask 'tunnelbear'
 
-brew 'gpg2', args: [ '--with-readline' ]
+# brew 'gpg2', args: [ '--with-readline' ]
 cask 'gpgtools'
 
 cask '1password'

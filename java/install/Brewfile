@@ -23,3 +23,7 @@ tap 'pivotal/tap'
 brew 'springboot'
 
 brew 'spring-completion'
+# brew 'rest-shell'
+
+# Android
+# brew 'android-sdk'
