@@ -71,5 +71,11 @@ brew 'amazon-ecs-cli'
 # Shell Development
 cask 'black-screen'
 
+# Terminal recording
+## See https://asciinema.org/
+brew 'asciinema'
+
+brew 'kafkacat'
+
 # See https://github.com/rgcr/m-cli
 brew 'm-cli'
