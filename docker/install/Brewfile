@@ -2,7 +2,10 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/completions'
 
-# cask 'dockertoolbox'
+cask 'docker'
+brew 'docker'
+
+#cask 'docker-toolbox'
 
 # brew 'docker-completion' # jet와 충돌난다
 brew 'docker-compose-completion'

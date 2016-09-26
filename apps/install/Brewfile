@@ -7,7 +7,7 @@ brew 'open-completion'
 brew 'you-get', args: ['--with-rtmpdump']
 
 cask 'alfred'
-cask 'cheatsheet'
+#cask 'cheatsheet'
 cask 'appcleaner'
 
 cask 'bartender'
@@ -23,7 +23,7 @@ cask 'google-chrome'
 
 # Office
 cask 'skype'
-cask 'whatsapp'
+# cask 'whatsapp'
 # cask 'pdfpenpro'
 
 # Writing
@@ -45,6 +45,8 @@ cask 'google-photos-backup'
 cask 'amazon-cloud-drive'
 cask 'chronosync'
 
+brew 'gdrive'
+
 # Multimedia
 cask 'vlc'
 cask 'air-video-server-hd'
@@ -54,12 +56,14 @@ cask 'edgeview'
 ## cask 'google-nik-collection'
 # cask 'tvmobili'
 
+cask 'airmail-beta'
+
 cask 'anki'
 cask 'gitbook-editor'
 cask 'transmission'
 # cask 'webtorrent'
-cask 'parallels-desktop'
-cask 'bluestacks'
+cask 'parallels-desktop11'
+#cask 'bluestacks'
 
 # Hardwares
 cask 'logitech-options'

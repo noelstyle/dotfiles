@@ -5,8 +5,8 @@ tap 'homebrew/completions'
 # Java development
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 
-tap 'caskroom/versions'
-cask 'java7'
+#tap 'caskroom/versions'
+#cask 'java7'
 
 cask 'intellij-idea'
 
@@ -21,9 +21,8 @@ brew 'jmeter', args: ['--with-plugins']
 # Install Spring Boot
 tap 'pivotal/tap'
 brew 'springboot'
-
-brew 'spring-completion'
-# brew 'rest-shell'
+#brew 'spring-completion'
+#brew 'rest-shell'
 
 # Android
-# brew 'android-sdk'
+#brew 'android-sdk'

@@ -7,7 +7,7 @@ brew 'neovim'
 
 cask 'atom'
 
-cask 'visual-studio-code'
+#cask 'visual-studio-code'
 
 brew 'shellcheck'
 

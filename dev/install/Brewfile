@@ -22,7 +22,7 @@ brew 'rmtrash'
 brew 'moreutils' # http://zeroturnaround.com/rebellabs/5-command-line-tools-you-should-be-using/
 
 # Development
-cask 'p4merge'
+#cask 'p4merge'
 cask 'beyond-compare'
 
 brew 'icdiff' # http://zeroturnaround.com/rebellabs/5-command-line-tools-you-should-be-using/
@@ -39,12 +39,12 @@ brew 'lnav', args: ['----with-curl']
 # Databases
 brew 'mysql'
 brew 'mytop'
-cask 'mysqlworkbench'
+#cask 'mysqlworkbench'
 cask 'sequel-pro'
 
 # Install Cyberduck and its command line interface. See https://duck.sh/
-cask 'cyberduck'
-brew 'duck'
+#cask 'cyberduck'
+#brew 'duck'
 
 # Install the download accelerator
 brew 'axel'

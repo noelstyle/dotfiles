@@ -6,14 +6,14 @@ brew 'tor', args: [ '--with-libnatpmp', '--with-libscrypt', '--with-miniupnpc' ]
 brew 'torsocks'
 brew 'arm'
 cask 'torbrowser'
-cask 'onionshare'
+#cask 'onionshare'
 cask 'tunnelbear'
 
 # brew 'gpg2', args: [ '--with-readline' ]
 cask 'gpgtools'
 
-cask '1password'
-cask 'lastpass'
+cask '1password-beta'
+# cask 'lastpass'
 # brew 'lastpass-cli', args: [ '--with-doc', '--with-pinentry' ]
 
 tap 'homebrew/fuse'

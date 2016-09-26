@@ -7,7 +7,7 @@ tap 'homebrew/versions'
 tap 'homebrew/completions'
 
 brew 'brew-cask-completion'
-cask 'cakebrew'
+#cask 'cakebrew'
 
 brew 'stow'
 

@@ -1,4 +1,3 @@
-AtomicChar
 activate-power-mode
 advanced-open-file
 atom-beautify
