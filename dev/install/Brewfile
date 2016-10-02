@@ -32,7 +32,7 @@ brew 'icdiff' # http://zeroturnaround.com/rebellabs/5-command-line-tools-you-sho
 
 cask 'tunnelblick'
 
-cask 'redis'
+brew 'redis'
 
 brew 'lnav', args: ['----with-curl']
 

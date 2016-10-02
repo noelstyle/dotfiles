@@ -6,6 +6,8 @@ brew 'open-completion'
 ## See https://you-get.org/?ref=producthunt
 brew 'you-get', args: ['--with-rtmpdump']
 
+brew 'jrnl'
+
 cask 'alfred'
 #cask 'cheatsheet'
 cask 'appcleaner'
@@ -30,9 +32,13 @@ cask 'skype'
 cask 'marked'
 cask 'markdown-service-tools'
 
+cask 'nvalt'
+
+cask 'evernote'
+
 cask 'grammarly'
 
-cask 'microsoft-office'
+# cask 'microsoft-office'
 
 # Reading
 cask 'ridibooks'
