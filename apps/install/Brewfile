@@ -48,7 +48,7 @@ cask 'skim'
 cask 'dropbox'
 cask 'flickr-uploadr'
 cask 'google-photos-backup'
-cask 'amazon-cloud-drive'
+# cask 'amazon-cloud-drive'
 cask 'chronosync'
 
 brew 'gdrive'
