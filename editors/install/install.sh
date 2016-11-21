@@ -24,3 +24,6 @@ echo | echo | vim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev/
 # NVim
 ## Install NeoVim plugins
 echo | echo | nvim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev/null
+
+# remark-lint
+npm list -g remark-lint && npm update --silent -g remark-lint || npm install --silent -g remark-lint
