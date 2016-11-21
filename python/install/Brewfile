@@ -6,3 +6,5 @@ brew 'python3'
 cask 'pycharm'
 
 brew 'pip-completion'
+
+brew 'autoenv'

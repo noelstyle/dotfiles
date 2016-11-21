@@ -1,3 +1,5 @@
 cask_args appdir: '/Applications'
 
 brew 'node', args: ['--with-full-icu', '--with-openssl']
+
+cask 'webstorm'

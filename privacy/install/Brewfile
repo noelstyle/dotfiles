@@ -12,6 +12,8 @@ cask 'tunnelbear'
 # brew 'gpg2', args: [ '--with-readline' ]
 cask 'gpgtools'
 
+cask 'gpg-sync'
+
 cask '1password-beta'
 # cask 'lastpass'
 # brew 'lastpass-cli', args: [ '--with-doc', '--with-pinentry' ]
