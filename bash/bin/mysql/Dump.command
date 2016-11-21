@@ -1,11 +1,11 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 THIS_DIR=`dirname $0`
 
 source "$THIS_DIR/Info.sh"
 
 # Check if mysqldump exists
 BIN_PATH=`which mysqldump`
-if [ -z "BIN_PATH" ]; then
+if [ -z "${BIN_PATH}" ]; then
     echo "mysqldump is not found!"
 	exit 1
 fi

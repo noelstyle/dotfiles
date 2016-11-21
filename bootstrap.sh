@@ -34,7 +34,7 @@ then
 fi
 
 # Upgrade all the existing packages
-brew update && brew upgrade 
+brew update && brew upgrade
 
 # Install the packages described in `Brewfile`
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
@@ -57,7 +57,7 @@ brew cask cleanup
 # Run GNU Stow
 # Treat the personal configurations first
 if [ -f "$THIS_DIR/not-shared" ]; then
-  stow --restow --target="$HOME" --ignore="install*" "not-shared"
+  stow --restow --target="$HOME" --ignore="install*" --ignore ".DS_Store" "not-shared"
 fi
 
 dirlist=$(find . -mindepth 1 -maxdepth 1 -type d -not  \( -path "./.*" \) | awk -F/ '{print $NF}')
