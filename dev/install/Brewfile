@@ -68,6 +68,8 @@ brew 's3cmd'
 brew 'awscli'
 brew 'amazon-ecs-cli'
 
+# Google Cloud Platform
+cask 'google-cloud-sdk'
 
 # Shell Development
 cask 'black-screen'
@@ -80,3 +82,7 @@ brew 'kafkacat'
 
 # See https://github.com/rgcr/m-cli
 brew 'm-cli'
+
+brew 'terraform'
+
+brew 'jq'
