@@ -14,7 +14,7 @@ while IFS='' read -r PLUGIN || [[ -n "$PLUGIN" ]]; do
 done < "$THIS_DIR/atom-packages.txt"
 
 ## Install sqlparse for Atom Beautify
-pip install --upgrade sqlparse
+pip3 install --upgrade sqlparse
 
 # Vim
 ## Install Vim plugins

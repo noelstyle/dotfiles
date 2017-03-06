@@ -7,6 +7,8 @@ brew 'open-completion'
 brew 'you-get', args: ['--with-rtmpdump']
 
 brew 'jrnl'
+cask 'dayone-cli'
+# cask 'typora'
 
 cask 'alfred'
 #cask 'cheatsheet'
@@ -21,15 +23,16 @@ cask 'go2shell'
 
 # Browsers
 cask 'firefox'
-cask 'google-chrome'
+cask 'google-chrome-canary'
 
 # Office
 cask 'skype'
+cask 'telegram'
 # cask 'whatsapp'
 # cask 'pdfpenpro'
 
 # Writing
-cask 'marked'
+#cask 'marked'
 cask 'markdown-service-tools'
 
 cask 'nvalt'
@@ -42,7 +45,7 @@ cask 'grammarly'
 
 # Reading
 cask 'ridibooks'
-cask 'skim'
+#cask 'skim'
 
 # Backups
 cask 'dropbox'
@@ -55,6 +58,7 @@ brew 'gdrive'
 
 # Multimedia
 cask 'vlc'
+#cask 'elmedia-player'
 cask 'air-video-server-hd'
 cask 'spotify'
 cask 'edgeview'
@@ -73,7 +77,9 @@ cask 'parallels-desktop11'
 
 # Hardwares
 cask 'logitech-options'
-cask 'scansnap-manager-ix500'
+#cask 'scansnap-manager-ix500'
+
+# cask 'popclip'
 
 # cask 'paragon-ntfs'
 # cask 'stretchlink'
@@ -85,3 +91,5 @@ cask 'scansnap-manager-ix500'
 
 # See http://osxdaily.com/2012/12/05/how-to-remove-exif-data-from-images-quickly/
 # cask 'imageoptim'
+
+cask 'shiori'

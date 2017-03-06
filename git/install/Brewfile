@@ -8,4 +8,4 @@ brew 'git-extras'
 brew 'git-standup'
 
 cask 'sourcetree'
-cask 'gitkraken'
+#cask 'gitkraken'

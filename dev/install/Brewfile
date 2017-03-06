@@ -41,6 +41,7 @@ brew 'mysql'
 brew 'mytop'
 #cask 'mysqlworkbench'
 cask 'sequel-pro'
+cask 'dbeaver-enterprise'
 
 # Install Cyberduck and its command line interface. See https://duck.sh/
 #cask 'cyberduck'
@@ -59,17 +60,17 @@ brew 'stress'
 # See https://github.com/jkbrzt/httpie-oauth
 brew 'httpie'
 
-cask 'sshfs'
+#cask 'sshfs'
 brew 's3cmd'
 
 # cask 'manopen'
 
 # AWS
 brew 'awscli'
-brew 'amazon-ecs-cli'
+#brew 'amazon-ecs-cli'
 
 # Google Cloud Platform
-cask 'google-cloud-sdk'
+#cask 'google-cloud-sdk'
 
 # Shell Development
 cask 'black-screen'
@@ -78,11 +79,13 @@ cask 'black-screen'
 ## See https://asciinema.org/
 brew 'asciinema'
 
-brew 'kafkacat'
+# brew 'kafkacat'
 
 # See https://github.com/rgcr/m-cli
 brew 'm-cli'
 
-brew 'terraform'
+#brew 'terraform'
 
 brew 'jq'
+
+#cask 'jetbrains-toolbox'

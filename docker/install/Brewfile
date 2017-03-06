@@ -14,4 +14,4 @@ brew 'docker-machine-completion'
 cask 'jet'
 brew 'fleetctl'
 
-brew 'kubectl'
+# brew 'kubectl'

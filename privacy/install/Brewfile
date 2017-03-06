@@ -20,9 +20,10 @@ cask '1password-beta'
 
 tap 'homebrew/fuse'
 brew 'encfs'
-# brew 'sshfs'
+#brew 'osxfuse'
+#brew 'sshfs'
 
-# cask 'veracrypt'
+#cask 'veracrypt'
 
 brew 'keybase'
 cask 'keybase'

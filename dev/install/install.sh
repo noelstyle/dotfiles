@@ -12,3 +12,6 @@ if [[ ${RC} == 0 ]];
 then
   m update install all;
 fi
+
+# Travis CI command-line tool
+gem install travis

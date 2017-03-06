@@ -4,6 +4,7 @@ brew 'bash'
 brew 'bash-completion'
 
 cask 'iterm2-beta'
+#cask 'hyper'
 
 # Just for fun
 brew 'fortune', args: ['--without-offensive']
@@ -19,3 +20,6 @@ brew 'figlet'
 brew 'autojump'
 
 brew 'ranger'
+
+# Simplified and community-driven man pages
+brew 'tldr'

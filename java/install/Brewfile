@@ -3,7 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/completions'
 
 # Java development
-cask 'java' unless system '/usr/libexec/java_home --failfast'
+cask 'java-beta' unless system '/usr/libexec/java_home --failfast'
 
 #tap 'caskroom/versions'
 #cask 'java7'

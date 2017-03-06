@@ -63,6 +63,6 @@ fi;
 
 # Just for fun
 # http://haruair.com/blog/3521
-if [ -e $(which fortune) ] && [ -e $(which cowsay) ]; then
-	fortune | cowsay
-fi
+#if [ -e $(which fortune) ] && [ -e $(which cowsay) ]; then
+    #fortune | cowsay
+#fi
