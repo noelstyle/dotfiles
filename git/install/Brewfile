@@ -6,6 +6,11 @@ brew 'git-lfs'
 brew 'git-flow'
 brew 'git-extras'
 brew 'git-standup'
+brew 'diff-so-fancy'
+brew 'bash-git-prompt'
 
 cask 'sourcetree'
 #cask 'gitkraken'
+
+# See https://hackernoon.com/macbook-my-command-line-utilities-f8a121c3b019#.9coythpx9
+brew 'tig'
