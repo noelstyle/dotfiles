@@ -23,3 +23,12 @@ brew 'ranger'
 
 # Simplified and community-driven man pages
 brew 'tldr'
+
+# See https://hackernoon.com/macbook-my-command-line-utilities-f8a121c3b019#.9coythpx9
+brew 'peco'
+
+brew 'yank'
+
+brew 'ranger'
+
+brew 'ncdu'

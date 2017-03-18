@@ -15,3 +15,7 @@ fi
 
 # Travis CI command-line tool
 gem install travis
+
+
+# See https://github.com/Orkohunter/keep
+pip install keep
