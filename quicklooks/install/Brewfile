@@ -13,6 +13,8 @@ cask 'qlmarkdown'
 # ref: https://github.com/sindresorhus/quick-look-plugins
 cask 'quicklook-csv'
 
+cask 'qlgradle'
+
 cask 'quicklook-json'
 
 cask 'qlcolorcode'
@@ -30,6 +32,8 @@ cask 'webpquicklook'
 cask 'suspicious-package'
 
 cask 'provisionql'
+
+cask 'qlvideo'
 
 # Install QuickLook render plugin for ReST (ReStructuredText) files.
 # ref: https://github.com/cluther/qlrest
