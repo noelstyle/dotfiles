@@ -3,6 +3,9 @@ THIS_DIR=$(cd "$(dirname "$0")"; pwd)
 
 brew bundle --file="$THIS_DIR/Brewfile"
 
+# Install git-lfs
+git lfs install
+
 # Install git-wip
 GIT_WIP_DIR="${HOME}/bin/git-wip"
 
@@ -22,3 +25,7 @@ git config --global color.diff-highlight.oldNormal "red bold"
 git config --global color.diff-highlight.oldHighlight "red bold 52"
 git config --global color.diff-highlight.newNormal "green bold"
 git config --global color.diff-highlight.newHighlight "green bold 22"
+
+# See https://github.com/sjurba/rebase-editor?ref=stackshare
+npm list -g rebase-editor && npm update --silent -g rebase-editor || npm install --silent -g rebase-editor
+git config --global sequence.editor rebase-editor
