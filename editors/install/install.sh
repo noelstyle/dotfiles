@@ -16,6 +16,12 @@ done < "$THIS_DIR/atom-packages.txt"
 ## Install sqlparse for Atom Beautify
 pip3 install --upgrade sqlparse
 
+## Install sqlint for Sublime​Linter-contrib-sqlint
+gem install sqlint
+
+## Install pyyaml for Sublime​Linter-pyyaml
+pip3 install --upgrade pyyaml
+
 # Vim
 ## Install Vim plugins
 ## See https://github.com/VundleVim/Vundle.vim/issues/511

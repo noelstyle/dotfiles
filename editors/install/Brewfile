@@ -9,6 +9,8 @@ cask 'macvim'
 
 cask 'atom'
 
+cask 'sublime-text'
+
 #cask 'visual-studio-code'
 
 brew 'shellcheck'
