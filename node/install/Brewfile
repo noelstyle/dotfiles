@@ -4,4 +4,6 @@ brew 'node', args: ['--with-full-icu', '--with-openssl']
 
 brew 'yarn'
 
-cask 'webstorm'
+brew 'watchman'
+
+cask 'webstorm-eap'

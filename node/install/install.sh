@@ -9,3 +9,5 @@ brew bundle --file="$THIS_DIR/Brewfile"
 npm list -g npm-check && npm update --silent -g npm-check || npm install --silent -g npm-check
 
 yarn global upgrade
+
+yarn global upgrade prettier
