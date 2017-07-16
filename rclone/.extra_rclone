@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-if test -d "${GOPATH}"
-then
-  export PATH=$HOME/.rclone/bin:$PATH
-fi
