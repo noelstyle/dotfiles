@@ -29,3 +29,6 @@ git config --global color.diff-highlight.newHighlight "green bold 22"
 # See https://github.com/sjurba/rebase-editor?ref=stackshare
 npm list -g rebase-editor && npm update --silent -g rebase-editor || npm install --silent -g rebase-editor
 git config --global sequence.editor rebase-editor
+
+# See https://github.com/joshdick/git-fuzzy
+npm list -g git-fuzzy && npm update --silent -g git-fuzzy || npm install --silent -g git-fuzzy

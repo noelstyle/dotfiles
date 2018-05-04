@@ -30,6 +30,17 @@ Plug 'rhysd/committia.vim'
 
 Plug 'bartman/git-wip', {'rtp': 'vim/'}
 
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+Plug 'tpope/vim-unimpaired'
+
+Plug 'easymotion/vim-easymotion'
+
+Plug 'terryma/vim-multiple-cursors'
+
 " Add Plugs to &runtimepath
 call plug#end()
 
@@ -102,7 +113,3 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 " `minimal-vimrc` ends
-
-if empty(glob("/usr/local/opt/fzf"))
-  set rtp+=/usr/local/opt/fzf
-endif

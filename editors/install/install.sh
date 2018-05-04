@@ -17,7 +17,7 @@ done < "$THIS_DIR/atom-packages.txt"
 pip3 install --upgrade sqlparse
 
 ## Install sqlint for Sublime​Linter-contrib-sqlint
-gem install sqlint
+gem install --user-install sqlint
 
 ## Install pyyaml for Sublime​Linter-pyyaml
 pip3 install --upgrade pyyaml
@@ -33,3 +33,13 @@ echo | echo | nvim +PlugUpgrade +PlugInstall +PlugUpdate +PlugClean +qall &>/dev
 
 # remark-lint
 npm list -g remark-lint && npm update --silent -g remark-lint || npm install --silent -g remark-lint
+
+# dockerfilelint
+npm list -g dockerfilelint && npm update --silent -g dockerfilelint || npm install --silent -g dockerfilelint
+
+# vim-anywhere
+if [[ ! -f "${HOME}/.vim-anywhere/install" ]]; then
+	curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+fi
+
+"${HOME}/.vim-anywhere/update"

@@ -11,7 +11,10 @@ brew 'bash-git-prompt'
 
 cask 'sourcetree'
 #cask 'gitter'
-#cask 'gitkraken'
+cask 'gitkraken'
 
 # See https://hackernoon.com/macbook-my-command-line-utilities-f8a121c3b019#.9coythpx9
 brew 'tig'
+
+
+brew 'bfg'

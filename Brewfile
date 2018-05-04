@@ -15,5 +15,5 @@ brew 'stow'
 # Utils
 brew 'p7zip'
 brew 'testdisk'
-brew 'commonmark'
+brew 'cmark-gfm'
 brew 'gtypist'

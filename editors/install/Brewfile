@@ -1,4 +1,4 @@
-cask_args appdir: '/Applications'
+	cask_args appdir: '/Applications'
 
 brew 'vim', args: ['--override-system-vi', '--with-python3', '--with-mzscheme', '--with-lua', '--with-luajit', '--with-tcl']
 
@@ -7,13 +7,20 @@ brew 'neovim'
 
 cask 'macvim'
 
+# cask 'vimr'
+
 cask 'atom'
 
-cask 'sublime-text'
+# cask 'sublime-text'
+cask 'sublime-text-dev'
 
-#cask 'visual-studio-code'
+# cask 'visual-studio-code'
 
 brew 'shellcheck'
 
 # Install uncrustify for Atom Beautify
 brew 'uncrustify'
+
+# cask 'oni'
+
+# brew 'micro'

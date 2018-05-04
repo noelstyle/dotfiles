@@ -19,7 +19,6 @@ expose
 file-icons
 file-types
 file-watcher
-format-sql
 gist-it
 git-control
 git-plus
@@ -47,7 +46,6 @@ linter-haproxy
 linter-markdown
 linter-shellcheck
 markdown-deluxe
-markdown-folder
 markdown-preview-opener
 markdown-preview-plus
 markdown-scroll-sync

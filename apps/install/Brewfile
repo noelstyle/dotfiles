@@ -5,6 +5,9 @@ brew 'open-completion'
 # Download media contents
 ## See https://you-get.org/?ref=producthunt
 brew 'you-get', args: ['--with-rtmpdump']
+## To use post-processing options, `brew install ffmpeg` or `brew install libav`.
+brew 'ffmpeg'
+brew 'libav'
 
 brew 'jrnl'
 cask 'dayone-cli'
@@ -19,17 +22,20 @@ cask 'bettertouchtool'
 
 # Shell
 cask 'path-finder'
-cask 'go2shell'
+# cask 'go2shell'
 
 # Browsers
 cask 'firefox'
-cask 'google-chrome-canary'
+cask 'google-chrome'
+# cask 'google-chrome-canary'
 
 # Office
 cask 'skype'
 cask 'telegram'
+cask 'signal'
 # cask 'whatsapp'
 # cask 'pdfpenpro'
+cask 'pdfexpert'
 
 # Writing
 #cask 'marked'
@@ -37,9 +43,11 @@ cask 'markdown-service-tools'
 
 cask 'nvalt'
 
-cask 'evernote'
+cask 'notion'
 
-cask 'grammarly'
+# cask 'evernote'
+
+# cask 'grammarly'
 
 # cask 'microsoft-office'
 
@@ -50,7 +58,8 @@ cask 'ridibooks'
 # Backups
 cask 'dropbox'
 cask 'flickr-uploadr'
-cask 'google-photos-backup'
+cask 'google-photos-backup-and-sync'
+cask 'google-drive-file-stream'
 # cask 'amazon-cloud-drive'
 cask 'chronosync'
 
@@ -61,7 +70,6 @@ cask 'vlc'
 #cask 'elmedia-player'
 cask 'air-video-server-hd'
 cask 'spotify'
-cask 'edgeview'
 ## https://www.google.com/nikcollection/
 ## cask 'google-nik-collection'
 # cask 'tvmobili'
@@ -72,19 +80,20 @@ cask 'anki'
 cask 'gitbook-editor'
 cask 'transmission'
 # cask 'webtorrent'
-cask 'parallels-desktop11'
+cask 'parallels'
+# cask 'parallels-toolbox'
 #cask 'bluestacks'
 
 # Hardwares
-cask 'logitech-options'
-#cask 'scansnap-manager-ix500'
+# cask 'logitech-options'
+# cask 'scansnap-manager-ix500'
 
 # cask 'popclip'
 
-# cask 'paragon-ntfs'
+cask 'paragon-ntfs'
 # cask 'stretchlink'
 # cask 'fluid'
-# cask 'duet'
+cask 'duet'
 # cask 'flux'
 # cask 'onyx'
 # cask 'rescuetime'
@@ -92,4 +101,5 @@ cask 'logitech-options'
 # See http://osxdaily.com/2012/12/05/how-to-remove-exif-data-from-images-quickly/
 # cask 'imageoptim'
 
-cask 'shiori'
+# cask 'shiori'
+# cask 'platypus'

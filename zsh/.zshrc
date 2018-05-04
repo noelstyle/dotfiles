@@ -86,3 +86,6 @@ export LANG=ko_KR.UTF-8
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# added by travis gem
+[ -f /Users/tywin/.travis/travis.sh ] && source /Users/tywin/.travis/travis.sh

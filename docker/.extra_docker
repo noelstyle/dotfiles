@@ -30,6 +30,3 @@ alias dockerclean='dockerrm; dockerrmi'
 
 # Stop and remove all containers and then remove all the images
 alias dockercleanall='dockerrm; dockerrmiall'
-
-# Get and copy Docker login command for AWS ECR into the clipboard
-alias dockerlogin='aws --region=us-east-1 ecr get-login | pbcopy && echo "Command is pasted into the clipboard!"'

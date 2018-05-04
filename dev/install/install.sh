@@ -14,8 +14,10 @@ then
 fi
 
 # Travis CI command-line tool
-gem install travis
-
+gem install --user-install travis
 
 # See https://github.com/Orkohunter/keep
-pip install keep
+pip install keep --upgrade
+
+
+npm list -g snyk && npm update --silent -g snyk || npm install --silent -g snyk

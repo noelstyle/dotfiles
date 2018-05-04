@@ -66,3 +66,6 @@ fi;
 #if [ -e $(which fortune) ] && [ -e $(which cowsay) ]; then
     #fortune | cowsay
 #fi
+
+# https://direnv.net/
+eval "$(direnv hook bash)"

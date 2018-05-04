@@ -2,10 +2,11 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/completions'
 
-cask 'docker'
-brew 'docker'
+# cask 'docker'
+cask 'docker-edge'
+# brew 'docker'
 
-#cask 'docker-toolbox'
+# cask 'docker-toolbox'
 
 # brew 'docker-completion' # jet와 충돌난다
 brew 'docker-compose-completion'
@@ -15,3 +16,4 @@ cask 'jet'
 brew 'fleetctl'
 
 # brew 'kubectl'
+brew 'kubernetes-helm'
