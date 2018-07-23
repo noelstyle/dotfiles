@@ -21,3 +21,10 @@ pip install keep --upgrade
 
 
 npm list -g snyk && npm update --silent -g snyk || npm install --silent -g snyk
+
+gem install tmuxinator
+
+
+if [[ ! -L "/usr/local/opt/aria2/homebrew.mxcl.aria2.plist" ]]; then
+	ln -s "${PWD}/homebrew.mxcl.aria2.plist" "/usr/local/opt/aria2/homebrew.mxcl.aria2.plist"
+fi

@@ -41,6 +41,8 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'terryma/vim-multiple-cursors'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 " Add Plugs to &runtimepath
 call plug#end()
 

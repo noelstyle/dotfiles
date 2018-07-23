@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/completions'
-
 # cask 'docker'
 cask 'docker-edge'
 # brew 'docker'
@@ -16,4 +14,4 @@ cask 'jet'
 brew 'fleetctl'
 
 # brew 'kubectl'
-brew 'kubernetes-helm'
+# brew 'kubernetes-helm'

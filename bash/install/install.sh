@@ -24,3 +24,6 @@ fi
 
 # Update TLDR database
 tldr --update
+
+# Z
+# . /usr/local/etc/profile.d/z.sh

@@ -17,10 +17,10 @@ cask '1password-cli'
 # cask 'lastpass'
 brew 'lastpass-cli', args: [ '--with-doc', '--with-pinentry' ]
 
-tap 'homebrew/fuse'
+# tap 'homebrew/fuse'
 #brew 'encfs'
-#brew 'osxfuse'
-#brew 'sshfs'
+# cask 'osxfuse'
+# brew 'sshfs'
 
 #cask 'veracrypt'
 

@@ -4,7 +4,6 @@ cask_args appdir: '/Applications'
 ## See https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 brew 'coreutils', args: ['--with-gmp']
 
-tap 'homebrew/dupes'
 brew 'gnu-tar', args: ['—-with-default-names']
 brew 'gnu-which', args: ['—-with-default-names']
 brew 'grep', args: ['-—with-default-names']
@@ -15,6 +14,7 @@ brew 'rsync'
 brew 'colordiff'
 brew 'watch'
 brew 'telnet'
+brew 'tree'
 # brew 'awk'
 
 # send files to OSX trash instead of deleting them
@@ -104,7 +104,10 @@ brew 'doctl'
 tap 'gwerbin/tap'
 cask 'gwerbin/tap/sqlcheck'
 
-tap 'drone/drone'
-brew 'drone', args: ['--devel']
+# tap 'drone/drone'
+# brew 'drone', args: ['--devel']
 
 brew 'tmux', args: ['--with-utf8proc']
+brew 'tmuxinator-completion'
+
+brew 'bat'

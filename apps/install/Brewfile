@@ -38,7 +38,7 @@ cask 'signal'
 cask 'pdfexpert'
 
 # Writing
-#cask 'marked'
+cask 'marked'
 cask 'markdown-service-tools'
 
 cask 'nvalt'
@@ -58,7 +58,7 @@ cask 'ridibooks'
 # Backups
 cask 'dropbox'
 cask 'flickr-uploadr'
-cask 'google-photos-backup-and-sync'
+cask 'google-backup-and-sync'
 cask 'google-drive-file-stream'
 # cask 'amazon-cloud-drive'
 cask 'chronosync'
@@ -103,3 +103,5 @@ cask 'duet'
 
 # cask 'shiori'
 # cask 'platypus'
+
+cask 'etcher'

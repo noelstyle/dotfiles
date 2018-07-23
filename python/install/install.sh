@@ -5,7 +5,7 @@ brew bundle --file="$THIS_DIR/Brewfile"
 
 sudo easy_install pip
 
-pip3 install --upgrade pip setuptools wheel
+pip3 install --user --upgrade pip setuptools wheel
 
 pip3 install --upgrade envtpl
 
