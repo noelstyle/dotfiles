@@ -35,7 +35,7 @@ cask 'telegram'
 cask 'signal'
 # cask 'whatsapp'
 # cask 'pdfpenpro'
-cask 'pdfexpert'
+cask 'pdf-expert'
 
 # Writing
 cask 'marked'

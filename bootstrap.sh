@@ -9,7 +9,7 @@ while true; do sudo -n true; sleep 120; kill -0 "$$" || exit; done 2>/dev/null &
 # Load the configurations
 THIS_DIR=$(cd "$(dirname "$0")"; pwd)
 
-source "$THIS_DIR/.config"
+source "${THIS_DIR}/.config"
 
 # Homebrew
 #
@@ -45,7 +45,13 @@ brew bundle
 
 # Find the installers and run them iteratively
 ## Ref: https://github.com/holman/dotfiles/blob/master/script/install
-find . -name install.sh | while read installer ; do sh -c "chmod +x ${installer} && ${installer}" ; done
+find . -path '**/install/install.sh' -mindepth 3 -maxdepth 3 | while read installer ; do
+  DIRNAME=$(dirname "${installer}")
+  if [[ -f "${DIRNAME}/.disabled" ]]; then
+    continue
+  fi
+  sh -c "chmod +x ${installer} && ${installer}" 
+done
 
 
 # Remove outdated versions from the cellar.
@@ -56,7 +62,7 @@ brew cask cleanup
 
 # Run GNU Stow
 # Treat the personal configurations first
-if [ -f "$THIS_DIR/not-shared" ]; then
+if [ -f "${THIS_DIR}/not-shared" ]; then
   stow --restow --target="$HOME" --ignore="install*" --ignore ".DS_Store" "not-shared"
 fi
 
@@ -64,9 +70,10 @@ dirlist=$(find . -mindepth 1 -maxdepth 1 -type d -not  \( -path "./.*" \) | awk 
 
 for dir in $dirlist
 do
-  (
-  stow --restow --target="$HOME" --ignore="install*" "$dir"
-  )
+  if [[ -f "${dir}/.disabled" ]]; then
+    continue
+  fi
+  stow --restow --target="${HOME}" --ignore="install*" --ignore='\.DS_Store' "${dir}"
 done
 unset dirlist;
 unset dir;

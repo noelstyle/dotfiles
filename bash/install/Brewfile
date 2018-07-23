@@ -29,8 +29,6 @@ brew 'peco'
 
 brew 'yank'
 
-brew 'ranger'
-
 brew 'ncdu'
 
 # See https://blog.outsider.ne.kr/1306
