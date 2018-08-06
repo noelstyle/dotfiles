@@ -51,8 +51,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
 # See https://hashnode.com/post/what-are-your-top-cli-tools-hacks-for-productivity-cinov8y4w00njxh53j2w9wfy4
 if which brew > /dev/null && [ -f "$(brew --prefix)/etc/profile.d/z.sh" ]; then
   source "$(brew --prefix)/etc/profile.d/z.sh"
@@ -63,9 +61,11 @@ fi;
 
 # Just for fun
 # http://haruair.com/blog/3521
-#if [ -e $(which fortune) ] && [ -e $(which cowsay) ]; then
-    #fortune | cowsay
-#fi
+# if [ -e $(which fortune) ] && [ -e $(which cowsay) ]; then
+#    fortune | cowsay
+# fi
 
-# https://direnv.net/
-eval "$(direnv hook bash)"
+# https://direnv.net/\
+which direnv > /dev/null && eval "$(direnv hook bash)"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

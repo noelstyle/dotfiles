@@ -17,6 +17,9 @@ cask '1password-cli'
 # cask 'lastpass'
 brew 'lastpass-cli', args: [ '--with-doc', '--with-pinentry' ]
 
+tap 'ravenac95/sudolikeaboss'
+brew 'sudolikeaboss'
+
 # tap 'homebrew/fuse'
 #brew 'encfs'
 # cask 'osxfuse'

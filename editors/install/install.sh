@@ -20,7 +20,7 @@ pip3 install --upgrade sqlparse
 gem install --user-install sqlint
 
 ## Install pyyaml for Sublime​Linter-pyyaml
-pip3 install --upgrade pyyaml
+# pip3 install --upgrade pyyaml
 
 # Vim
 ## Install Vim plugins

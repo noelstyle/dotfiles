@@ -22,6 +22,8 @@ then
   chsh -s "$THIS_SHELL_PATH"
 fi
 
+mkdir -p "${HOME}/bin"
+
 # Update TLDR database
 tldr --update
 
