@@ -38,8 +38,8 @@ for option in autocd globstar; do
 done;
 
 # Add tab completion for many Bash commands
-if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-	source "$(brew --prefix)/etc/bash_completion";
+if which brew > /dev/null && [ -f /usr/local/share/bash-completion/bash_completion ]; then
+    . /usr/local/share/bash-completion/bash_completion;
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
@@ -65,7 +65,8 @@ fi;
 #    fortune | cowsay
 # fi
 
-# https://direnv.net/\
-which direnv > /dev/null && eval "$(direnv hook bash)"
+# https://direnv.net/
+type -P direnv > /dev/null && eval "$(direnv hook bash)"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+

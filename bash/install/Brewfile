@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
 brew 'bash'
-brew 'bash-completion'
+brew 'bash-completion@2' # if running Bash 4.1+
 
 cask 'iterm2-beta'
 #cask 'hyper'

@@ -57,9 +57,6 @@ done
 # Remove outdated versions from the cellar.
 brew cleanup
 
-brew cask cleanup
-
-
 # Run GNU Stow
 # Treat the personal configurations first
 if [ -f "${THIS_DIR}/not-shared" ]; then
