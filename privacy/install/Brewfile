@@ -3,9 +3,9 @@ cask_args appdir: '/Applications'
 brew 'tor', args: [ '--with-libnatpmp', '--with-libscrypt', '--with-miniupnpc' ]
 brew 'torsocks'
 # brew 'arm'
-cask 'torbrowser'
-#cask 'onionshare'
-cask 'tunnelbear'
+# cask 'tor-browser'
+# cask 'onionshare'
+# cask 'tunnelbear'
 
 # brew 'gpg2', args: [ '--with-readline' ]
 cask 'gpg-suite'
@@ -21,15 +21,15 @@ tap 'ravenac95/sudolikeaboss'
 brew 'sudolikeaboss'
 
 # tap 'homebrew/fuse'
-#brew 'encfs'
+# brew 'encfs'
 # cask 'osxfuse'
 # brew 'sshfs'
 
-#cask 'veracrypt'
+# cask 'veracrypt'
 
 cask 'keybase'
 
-cask 'authy'
+# cask 'authy'
 
 # brew 'dnscrypt-proxy', args: [ '--with-plugins' ]
 cask 'dnscrypt'
@@ -39,5 +39,7 @@ cask 'dnscrypt'
 cask 'adguard'
 
 brew 'openvpn'
+
+# cask 'outline-manager'
 
 cask 'santa'

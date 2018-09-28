@@ -38,8 +38,8 @@ npm list -g remark-lint && npm update --silent -g remark-lint || npm install --s
 npm list -g dockerfilelint && npm update --silent -g dockerfilelint || npm install --silent -g dockerfilelint
 
 # vim-anywhere
-if [[ ! -f "${HOME}/.vim-anywhere/install" ]]; then
-	curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
-fi
-
-"${HOME}/.vim-anywhere/update"
+# if [[ ! -f "${HOME}/.vim-anywhere/install" ]]; then
+# 	curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+# fi
+#
+# "${HOME}/.vim-anywhere/update"

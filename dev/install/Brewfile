@@ -39,8 +39,8 @@ brew 'redis'
 brew 'lnav', args: ['----with-curl']
 
 # Databases
-brew 'mysql'
-brew 'mytop'
+#brew 'mysql'
+#brew 'mytop'
 #cask 'mysqlworkbench'
 cask 'sequel-pro'
 #cask 'dbeaver-enterprise'
@@ -49,9 +49,7 @@ cask 'sequel-pro'
 cask 'cyberduck'
 brew 'duck'
 
-# Install the download accelerator
-brew 'axel'
-brew 'aria2'
+
 
 # See http://blog.outsider.ne.kr/1159
 cask 'ngrok'

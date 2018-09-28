@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -x
 #
 # Ask for the administrator password upfront.
 sudo -v
@@ -47,7 +47,7 @@ brew bundle
 ## Ref: https://github.com/holman/dotfiles/blob/master/script/install
 find . -path '**/install/install.sh' -mindepth 3 -maxdepth 3 | while read installer ; do
   DIRNAME=$(dirname "${installer}")
-  if [[ -f "${DIRNAME}/.disabled" ]]; then
+  if [[ -f "${DIRNAME}/../.disabled" ]]; then
     continue
   fi
   sh -c "chmod +x ${installer} && ${installer}" 
@@ -70,6 +70,10 @@ do
   if [[ -f "${dir}/.disabled" ]]; then
     continue
   fi
+
+  #if [[ -e "${HOME}/${dir}" ]] && [[ ! -L "${HOME}/${dir}" ]]; then
+  #    /bin/rm -rf "${HOME}/${dir}"
+  #fi
   stow --restow --target="${HOME}" --ignore="install*" --ignore='\.DS_Store' "${dir}"
 done
 unset dirlist;

@@ -14,7 +14,7 @@ cask 'dayone-cli'
 # cask 'typora'
 
 cask 'alfred'
-#cask 'cheatsheet'
+cask 'cheatsheet'
 cask 'appcleaner'
 
 cask 'bartender'
@@ -30,7 +30,7 @@ cask 'google-chrome'
 # cask 'google-chrome-canary'
 
 # Office
-cask 'skype'
+# cask 'skype'
 cask 'telegram'
 cask 'signal'
 # cask 'whatsapp'
@@ -49,19 +49,19 @@ cask 'notion'
 
 # cask 'grammarly'
 
-# cask 'microsoft-office'
+cask 'microsoft-office'
 
 # Reading
-cask 'ridibooks'
-#cask 'skim'
+# cask 'ridibooks'
+# cask 'skim'
 
 # Backups
 cask 'dropbox'
-cask 'flickr-uploadr'
-cask 'google-backup-and-sync'
+# cask 'flickr-uploadr'
+# cask 'google-backup-and-sync'
 cask 'google-drive-file-stream'
 # cask 'amazon-cloud-drive'
-cask 'chronosync'
+# cask 'chronosync'
 
 brew 'gdrive'
 
@@ -77,10 +77,10 @@ cask 'spotify'
 cask 'airmail-beta'
 
 cask 'anki'
-cask 'gitbook-editor'
-cask 'transmission'
+# cask 'gitbook-editor'
+# cask 'transmission'
 # cask 'webtorrent'
-cask 'parallels'
+# cask 'parallels'
 # cask 'parallels-toolbox'
 #cask 'bluestacks'
 
@@ -90,10 +90,10 @@ cask 'parallels'
 
 # cask 'popclip'
 
-cask 'paragon-ntfs'
+# cask 'paragon-ntfs'
 # cask 'stretchlink'
 # cask 'fluid'
-cask 'duet'
+# cask 'duet'
 # cask 'flux'
 # cask 'onyx'
 # cask 'rescuetime'
@@ -104,4 +104,4 @@ cask 'duet'
 # cask 'shiori'
 # cask 'platypus'
 
-cask 'etcher'
+# cask 'etcher'

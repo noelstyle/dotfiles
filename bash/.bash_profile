@@ -58,7 +58,6 @@ fi;
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . "$(brew --prefix)/etc/profile.d/autojump.sh"
 
-
 # Just for fun
 # http://haruair.com/blog/3521
 # if [ -e $(which fortune) ] && [ -e $(which cowsay) ]; then
@@ -70,3 +69,6 @@ type -P direnv > /dev/null && eval "$(direnv hook bash)"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+if [[ -f "${HOME}/.bashrc" ]]; then
+    source "${HOME}/.bashrc"
+fi

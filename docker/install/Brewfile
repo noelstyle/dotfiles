@@ -7,11 +7,14 @@ cask 'docker-edge'
 # cask 'docker-toolbox'
 
 # brew 'docker-completion' # jet와 충돌난다
-brew 'docker-compose-completion'
-brew 'docker-machine-completion'
+# brew 'docker-compose-completion'
+# brew 'docker-machine-completion'
 
 cask 'jet'
 brew 'fleetctl'
 
 # brew 'kubectl'
 # brew 'kubernetes-helm'
+
+
+brew 'kubectx'

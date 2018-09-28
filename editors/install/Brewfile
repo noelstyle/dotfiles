@@ -5,7 +5,7 @@ brew 'vim', args: ['--override-system-vi', '--with-python3', '--with-mzscheme', 
 tap 'neovim/neovim'
 brew 'neovim'
 
-cask 'macvim'
+# cask 'macvim'
 
 # cask 'vimr'
 
