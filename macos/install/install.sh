@@ -75,12 +75,25 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
+# See: http://baqamore.hatenablog.com/entry/2015/02/09/221934
+
 # Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 0
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad MouseButtonMode -string TwoButton
+
+# Trackpad: Tracking speed
+defaults write -g com.apple.mouse.scaling 2
+
+# Trackpad: App Expose - Swipe down with three fingers
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture - int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture - int 2
+defaults write com.apple.dock showAppExposeGestureEnabled - boolean true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture - int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture - int 2
 
 # Magic Mouse
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse Clicking -bool true
@@ -142,8 +155,87 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# Disable Time Machine backups
+hash tmutil &> /dev/null && sudo tmutil disable
+
+###############################################################################
+# Shortcuts                                                                   #
+###############################################################################
+
+# See: https://github.com/diimdeep/dotfiles/blob/master/osx/configure/hotkeys.sh
+
+# Character         Special Key              Abbreviation
+#--------------------------------------------------------
+# @                 Command (Apple)   		 CMD
+# ~                 Option             		 OPT
+# $                 Shift              		 SHIFT
+# ^                 Control            		 CTRL
+
+# Input Sources > Select the previous input source : Ctrl + Space
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60 "
+  <dict>
+    <key>enabled</key><true/>
+    <key>value</key><dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>262144</integer>
+      </array>
+    </dict>
+  </dict>
+"
+
+# Input Sources > Select next source in Input menu : Ctrl + Space
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 61 "
+  <dict>
+    <key>enabled</key><true/>
+    <key>value</key><dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>786432</integer>
+      </array>
+    </dict>
+  </dict>
+"
+
+# Disable Spotlight shortcuts
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 64 "
+  <dict>
+    <key>enabled</key><true/>
+    <key>value</key><dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>1048576</integer>
+      </array>
+    </dict>
+  </dict>
+"
+
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 65 "
+  <dict>
+    <key>enabled</key><true/>
+    <key>value</key><dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>1572864</integer>
+      </array>
+    </dict>
+  </dict>
+"
+
+# Automatically switch to a document's input source
+defaults write com.apple.HIToolbox AppleGlobalTextInputProperties -dict TextInputGlobalPropertyPerContextInput 1
 
 ###############################################################################
 # Kill affected applications                                                  #

@@ -13,6 +13,7 @@ cask 'atom'
 
 # cask 'sublime-text'
 cask 'sublime-text-dev'
+cask 'sublime-merge'
 
 # cask 'visual-studio-code'
 
