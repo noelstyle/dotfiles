@@ -105,3 +105,5 @@ cask 'anki'
 # cask 'platypus'
 
 # cask 'etcher'
+
+cask 'bitbar'

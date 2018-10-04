@@ -31,8 +31,10 @@ cask 'keybase'
 
 # cask 'authy'
 
-# brew 'dnscrypt-proxy', args: [ '--with-plugins' ]
-cask 'dnscrypt'
+# cask 'opendns-updater'
+
+brew 'dnscrypt-proxy', args: [ '--with-plugins' ]
+# cask 'dnscrypt'
 
 # brew 'dnsmasq', args: ['--with-dnssec', '--with-libidn']
 
