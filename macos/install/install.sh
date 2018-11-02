@@ -206,7 +206,7 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 61
 # Disable Spotlight shortcuts
 defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 64 "
   <dict>
-    <key>enabled</key><true/>
+    <key>enabled</key><false/>
     <key>value</key><dict>
       <key>type</key><string>standard</string>
       <key>parameters</key>
@@ -221,7 +221,7 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 64
 
 defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 65 "
   <dict>
-    <key>enabled</key><true/>
+    <key>enabled</key><false/>
     <key>value</key><dict>
       <key>type</key><string>standard</string>
       <key>parameters</key>

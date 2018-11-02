@@ -3,3 +3,6 @@ cask_args appdir: '/Applications'
 tap 'caskroom/fonts'
 
 cask 'font-d2coding'
+
+# See: https://medium.com/the-code-review/nerd-fonts-how-to-install-configure-and-remove-programming-fonts-on-a-mac-178833b9daf3
+cask 'font-hack-nerd-font'

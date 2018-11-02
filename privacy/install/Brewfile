@@ -15,7 +15,7 @@ cask 'gpg-suite'
 cask '1password'
 cask '1password-cli'
 # cask 'lastpass'
-brew 'lastpass-cli', args: [ '--with-doc', '--with-pinentry' ]
+# brew 'lastpass-cli', args: [ '--with-doc', '--with-pinentry' ]
 
 tap 'ravenac95/sudolikeaboss'
 brew 'sudolikeaboss'
@@ -33,7 +33,7 @@ cask 'keybase'
 
 # cask 'opendns-updater'
 
-brew 'dnscrypt-proxy', args: [ '--with-plugins' ]
+brew 'dnscrypt-proxy'
 # cask 'dnscrypt'
 
 # brew 'dnsmasq', args: ['--with-dnssec', '--with-libidn']

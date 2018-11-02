@@ -24,3 +24,5 @@ npm list -g snyk && npm update --silent -g snyk || npm install --silent -g snyk
 
 gem install tmuxinator
 
+# Google Cloud Platform
+type gcloud 2>&1 > /dev/null && gcloud components update --quiet

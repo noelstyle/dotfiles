@@ -4,7 +4,7 @@
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
-while true; do sudo -n true; sleep 120; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do sudo -n true; sleep 2400; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Load the configurations
 THIS_DIR=$(cd "$(dirname "$0")"; pwd)
