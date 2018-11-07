@@ -114,3 +114,6 @@ brew 'tmuxinator-completion'
 brew 'bat'
 
 brew 'yamllint'
+
+# Travis CI command-line tool
+brew 'travis'

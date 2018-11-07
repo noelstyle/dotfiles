@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH"
 
 for file in $HOME/bin/*; do
 	[ -r "$file" ] && [ -d "$file" ] && export PATH="$file:$PATH";

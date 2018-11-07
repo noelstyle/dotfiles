@@ -4,7 +4,7 @@ THIS_DIR=$(cd "$(dirname "$0")"; pwd)
 brew bundle --file="$THIS_DIR/Brewfile"
 
 # httpie
-pip install httpie-oauth --upgrade
+pip install httpie-oauth --user --upgrade
 
 brew install m-cli
 RC=$?
@@ -13,16 +13,12 @@ then
   m update install all;
 fi
 
-# Travis CI command-line tool
-gem install --user-install travis
-
 # See https://github.com/Orkohunter/keep
-pip install keep --upgrade
-
+pip install keep --user --upgrade
 
 npm list -g snyk && npm update --silent -g snyk || npm install --silent -g snyk
 
-gem install tmuxinator
+gem install --user-install tmuxinator
 
 # Google Cloud Platform
 type gcloud 2>&1 > /dev/null && gcloud components update --quiet

@@ -10,7 +10,7 @@ brew bundle --file="$THIS_DIR/Brewfile"
 # networksetup -setdnsservers "Wi-Fi" 8.8.8.8 8.8.4.4 2001:4860:4860::8888 2001:4860:4860::8844
 
 # DNS Crypt
-cp -f "${PWD}/dnscrypt-proxy.toml" "/usr/local/etc/dnscrypt-proxy.toml"
+cp -f "${THIS_DIR}/dnscrypt-proxy.toml" "/usr/local/etc/dnscrypt-proxy.toml"
 sudo brew services restart dnscrypt-proxy
 networksetup -setdnsservers "Wi-Fi" 127.0.0.1
 

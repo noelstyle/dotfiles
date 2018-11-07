@@ -156,7 +156,11 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disable
+# hash tmutil &> /dev/null && sudo tmutil disable
+
+# This command prevents Time Machine’s backup process assuming a low CPU priority, allowing backups to complete insanely quickly. 
+# See http://www.mackungfu.org/massively-speed-up-time-capsule-time-machine-backups
+sudo sysctl debug.lowpri_throttle_enabled=0
 
 ###############################################################################
 # Shortcuts                                                                   #
