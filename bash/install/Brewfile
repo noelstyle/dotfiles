@@ -29,7 +29,5 @@ brew 'peco'
 
 brew 'yank'
 
-brew 'ncdu'
-
 # See https://blog.outsider.ne.kr/1306
 brew 'direnv'

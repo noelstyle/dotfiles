@@ -22,6 +22,9 @@ gem install --user-install sqlint
 ## Install pyyaml for Sublime​Linter-pyyaml
 # pip3 install --upgrade pyyaml
 
+## Install CodeIntel for SublimeCodeIntel
+pip3 install --upgrade --pre CodeIntel
+
 # Vim
 ## Install Vim plugins
 ## See https://github.com/VundleVim/Vundle.vim/issues/511

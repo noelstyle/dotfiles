@@ -53,7 +53,7 @@ defaults write com.apple.dock scroll-to-open -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Hide Menu Bar
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
+defaults write NSGlobalDomain _HIHideMenuBar -bool false
 
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
@@ -175,38 +175,6 @@ sudo sysctl debug.lowpri_throttle_enabled=0
 # $                 Shift              		 SHIFT
 # ^                 Control            		 CTRL
 
-# Input Sources > Select the previous input source : Ctrl + Space
-defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60 "
-  <dict>
-    <key>enabled</key><true/>
-    <key>value</key><dict>
-      <key>type</key><string>standard</string>
-      <key>parameters</key>
-      <array>
-        <integer>32</integer>
-        <integer>49</integer>
-        <integer>262144</integer>
-      </array>
-    </dict>
-  </dict>
-"
-
-# Input Sources > Select next source in Input menu : Ctrl + Space
-defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 61 "
-  <dict>
-    <key>enabled</key><true/>
-    <key>value</key><dict>
-      <key>type</key><string>standard</string>
-      <key>parameters</key>
-      <array>
-        <integer>32</integer>
-        <integer>49</integer>
-        <integer>786432</integer>
-      </array>
-    </dict>
-  </dict>
-"
-
 # Disable Spotlight shortcuts
 defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 64 "
   <dict>
@@ -226,6 +194,38 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 64
 defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 65 "
   <dict>
     <key>enabled</key><false/>
+    <key>value</key><dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>1572864</integer>
+      </array>
+    </dict>
+  </dict>
+"
+
+# Input Sources > Select the previous input source : Cmd + Space
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60 "
+  <dict>
+    <key>enabled</key><true/>
+    <key>value</key><dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>1048576</integer>
+      </array>
+    </dict>
+  </dict>
+"
+
+# Input Sources > Select next source in Input menu : Control + Cmd + Space
+defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 61 "
+  <dict>
+    <key>enabled</key><true/>
     <key>value</key><dict>
       <key>type</key><string>standard</string>
       <key>parameters</key>

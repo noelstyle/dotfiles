@@ -111,7 +111,14 @@ brew 'doctl'
 brew 'tmux', args: ['--with-utf8proc']
 brew 'tmuxinator-completion'
 
+# A cat(1) clone with wings. 
 brew 'bat'
+
+# A simple, fast and user-friendly alternative to 'find' 
+brew 'fd'
+
+# Ncdu is a disk usage analyzer with an ncurses interface. 
+brew 'ncdu'
 
 brew 'yamllint'
 
