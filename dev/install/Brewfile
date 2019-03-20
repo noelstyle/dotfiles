@@ -2,14 +2,14 @@ cask_args appdir: '/Applications'
 
 # GNU tools
 ## See https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
-brew 'coreutils', args: ['--with-gmp']
+brew 'coreutils'
 
-brew 'gnu-tar', args: ['—-with-default-names']
-brew 'gnu-which', args: ['—-with-default-names']
-brew 'grep', args: ['-—with-default-names']
+# brew 'gnu-tar', args: ['—-with-default-names']
+# brew 'gnu-which', args: ['—-with-default-names']
+# brew 'grep', args: ['-—with-default-names']
 brew 'gzip'
 brew 'lsof'
-brew 'less', args: ['--with-pcre']
+brew 'less'
 brew 'rsync'
 brew 'colordiff'
 brew 'watch'
@@ -36,7 +36,7 @@ cask 'tunnelblick'
 
 brew 'redis'
 
-brew 'lnav', args: ['----with-curl']
+brew 'lnav'
 
 # Databases
 #brew 'mysql'
@@ -108,7 +108,7 @@ brew 'doctl'
 # tap 'drone/drone'
 # brew 'drone', args: ['--devel']
 
-brew 'tmux', args: ['--with-utf8proc']
+brew 'tmux'
 brew 'tmuxinator-completion'
 
 # A cat(1) clone with wings. 
@@ -124,3 +124,7 @@ brew 'yamllint'
 
 # Travis CI command-line tool
 brew 'travis'
+
+brew 'augeas'
+
+brew 'exa'

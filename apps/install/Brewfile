@@ -4,13 +4,13 @@ brew 'open-completion'
 
 # Download media contents
 ## See https://you-get.org/?ref=producthunt
-brew 'you-get', args: ['--with-rtmpdump']
+brew 'you-get'
 ## To use post-processing options, `brew install ffmpeg` or `brew install libav`.
 brew 'ffmpeg'
 brew 'libav'
 
 brew 'jrnl'
-cask 'dayone-cli'
+# cask 'dayone-cli'
 # cask 'typora'
 
 cask 'alfred'
@@ -43,7 +43,7 @@ cask 'markdown-service-tools'
 
 cask 'nvalt'
 
-cask 'notion'
+# cask 'notion'
 
 # cask 'evernote'
 
@@ -109,3 +109,5 @@ cask 'anki'
 cask 'rcdefaultapp'
 cask 'contexts'
 cask 'bitbar'
+
+cask 'nitroshare'

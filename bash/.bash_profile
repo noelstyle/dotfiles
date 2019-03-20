@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH"
@@ -34,15 +34,11 @@ shopt -s cdspell;
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
 for option in autocd globstar; do
-	shopt -s "$option" 2> /dev/null;
+    shopt -s "$option" 2> /dev/null;
 done;
 
 # Add tab completion for many Bash commands
-if which brew > /dev/null && [ -f /usr/local/share/bash-completion/bash_completion ]; then
-    . /usr/local/share/bash-completion/bash_completion;
-elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
-fi;
+which brew > /dev/null && [[ -r "$(brew --prefix)l/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit

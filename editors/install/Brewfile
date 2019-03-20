@@ -1,6 +1,6 @@
 	cask_args appdir: '/Applications'
 
-brew 'vim', args: ['--override-system-vi', '--with-python3', '--with-mzscheme', '--with-lua', '--with-luajit', '--with-tcl']
+brew 'vim'
 
 tap 'neovim/neovim'
 brew 'neovim'
@@ -9,13 +9,13 @@ brew 'neovim'
 
 # cask 'vimr'
 
-cask 'atom'
+# cask 'atom'
 
-# cask 'sublime-text'
-cask 'sublime-text-dev'
+cask 'sublime-text'
+# cask 'sublime-text-dev'
 cask 'sublime-merge'
 
-# cask 'visual-studio-code'
+cask 'visual-studio-code'
 
 brew 'shellcheck'
 

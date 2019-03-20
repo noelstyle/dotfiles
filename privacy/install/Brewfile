@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications'
 
-brew 'tor', args: [ '--with-libnatpmp', '--with-libscrypt', '--with-miniupnpc' ]
-brew 'torsocks'
+# brew 'tor', args: [ '--with-libnatpmp', '--with-libscrypt', '--with-miniupnpc' ]
+# brew 'torsocks'
 # brew 'arm'
 # cask 'tor-browser'
 # cask 'onionshare'
@@ -33,7 +33,7 @@ cask 'keybase'
 
 # cask 'opendns-updater'
 
-brew 'dnscrypt-proxy'
+# brew 'dnscrypt-proxy'
 # cask 'dnscrypt'
 
 # brew 'dnsmasq', args: ['--with-dnssec', '--with-libidn']
@@ -41,6 +41,7 @@ brew 'dnscrypt-proxy'
 cask 'adguard'
 
 brew 'openvpn'
+brew 'wireguard-tools'
 
 # cask 'outline-manager'
 

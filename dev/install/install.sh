@@ -16,7 +16,9 @@ fi
 # See https://github.com/Orkohunter/keep
 pip install keep --user --upgrade
 
-npm list -g snyk && npm update --silent -g snyk || npm install --silent -g snyk
+(npm list -g snyk && npm update --silent -g snyk) || (npm install --silent -g snyk)
+
+(npm list -g bash-language-server && npm update --silent -g snybash-language-serverk) || (npm install --silent -g bash-language-server)
 
 gem install --user-install tmuxinator
 

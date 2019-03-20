@@ -1,6 +1,6 @@
 cask_args appdir: '/Applications'
 
-brew 'python', args: ['--with-berkeley-db4']
+brew 'python'
 brew 'python3'
 
 cask 'pycharm'

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 THIS_DIR=$(cd "$(dirname "$0")"; pwd)
 
-brew bundle --file="$THIS_DIR/Brewfile"
+LANG="en_EN.UTF-8" brew bundle --file="$THIS_DIR/Brewfile"
 
 # Install git-lfs
 git lfs install

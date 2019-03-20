@@ -18,3 +18,5 @@ brew 'fleetctl'
 
 
 brew 'kubectx'
+
+brew 'reactiveops/tap/rbac-lookup'

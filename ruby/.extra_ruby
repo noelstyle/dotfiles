@@ -4,3 +4,8 @@ if which rbenv > /dev/null;
 then 
 	eval "$(rbenv init -)"; 
 fi
+
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
+export PATH="${HOME}/.gem/ruby/2.5.0/bin:$PATH"

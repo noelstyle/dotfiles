@@ -1,6 +1,6 @@
 cask_args appdir: '/Applications'
 
-brew 'git', args: ['--with-blk-sha1', '--with-brewed-curl', '--with-brewed-openssl', '--with-brewed-svn', '--with-gettext', '--with-pcre' '--with-persistent-https']
+brew 'git'
 
 brew 'git-lfs'
 brew 'git-flow'
@@ -16,5 +16,4 @@ cask 'sourcetree'
 # See https://hackernoon.com/macbook-my-command-line-utilities-f8a121c3b019#.9coythpx9
 brew 'tig'
 
-
-brew 'bfg'
+# brew 'bfg'

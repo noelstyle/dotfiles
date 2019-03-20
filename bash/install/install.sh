@@ -25,7 +25,7 @@ fi
 mkdir -p "${HOME}/bin"
 
 # Update TLDR database
-tldr --update
+which tldr && tldr --update
 
 # Z
 # . /usr/local/etc/profile.d/z.sh

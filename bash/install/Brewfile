@@ -7,7 +7,7 @@ cask 'iterm2-beta'
 #cask 'hyper'
 
 # Just for fun
-brew 'fortune', args: ['--without-offensive']
+brew 'fortune'
 brew 'cowsay'
 brew 'ponysay'
 

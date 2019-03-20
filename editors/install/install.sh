@@ -3,27 +3,31 @@ THIS_DIR=$(cd "$(dirname "$0")"; pwd)
 
 brew bundle --file="$THIS_DIR/Brewfile"
 
+# Visual Studio Code
+
 
 # Atom
 ## Install Atom plugins
-while IFS='' read -r PLUGIN || [[ -n "$PLUGIN" ]]; do
-  if test ! -d "$HOME/.atom/packages/$PLUGIN"
-  then
-    apm install $PLUGIN
-  fi
-done < "$THIS_DIR/atom-packages.txt"
+if [[ "$(which apm)" != "" ]]; then
+  while IFS='' read -r PLUGIN || [[ -n "$PLUGIN" ]]; do
+    if test ! -d "$HOME/.atom/packages/$PLUGIN"
+    then
+      apm install $PLUGIN
+    fi
+  done < "$THIS_DIR/atom-packages.txt"
 
-## Install sqlparse for Atom Beautify
-pip3 install --upgrade sqlparse
+  ## Install sqlparse for Atom Beautify
+  pip3 install --upgrade sqlparse
 
-## Install sqlint for Sublime​Linter-contrib-sqlint
-gem install --user-install sqlint
+  ## Install sqlint for Sublime​Linter-contrib-sqlint
+  gem install --user-install sqlint
 
-## Install pyyaml for Sublime​Linter-pyyaml
-# pip3 install --upgrade pyyaml
+  ## Install pyyaml for Sublime​Linter-pyyaml
+  # pip3 install --upgrade pyyaml
 
-## Install CodeIntel for SublimeCodeIntel
-pip3 install --upgrade --pre CodeIntel
+  ## Install CodeIntel for SublimeCodeIntel
+  pip3 install --upgrade --pre CodeIntel
+fi
 
 # Vim
 ## Install Vim plugins
